@@ -1,0 +1,95 @@
+{
+    "name": "Client",
+    "options": {
+      "idInjection": false,
+      "mysql": {
+        "schema": "loopback-example-mysql",
+        "table": "client"
+      }
+    },
+
+    "properties": {
+      "client_id": {
+        "type": "Number",
+        "required": true,
+        "length": 10, 
+        "precision": 10,
+        "scale": 0,
+        "id":1,  
+          "mysql": {
+          "columnName": "client_id",
+          "dataType": "int",
+          "dataLength": 10,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+
+      "client_name": {
+        "type": "String",
+        "required": true,
+        "length": 100, 
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "client_name",
+          "dataType": "Varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+    
+        "client_payment_status": {
+            "type": "String",
+            "required": true,
+            "length": 100, 
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+              "columnName": "client_payment_status",
+              "dataType": "Varchar",
+              "dataLength": 100,
+              "dataPrecision": 10,
+              "dataScale": 0,
+              "nullable": "N"
+            }
+        },
+        
+        "client_pic_name": {
+            "type": "String",
+            "required": true,
+            "length": 100, 
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+              "columnName": "client_pic_name",
+              "dataType": "Varchar",
+              "dataLength": 100,
+              "dataPrecision": 10,
+              "dataScale": 0,
+              "nullable": "N"
+            }
+        },
+
+        "client_location": {
+          "type": "string",
+          "required": true,
+          "length": 10, 
+          "precision": 10,
+          "scale": 0,
+          "mysql": {
+            "columnName": "client_location",
+            "dataType": "Varchar",
+            "dataLength": 100,
+            "dataPrecision": 10,
+            "dataScale": 0,
+            "nullable": "N"
+          }
+        }
+
+        
+    }
+}

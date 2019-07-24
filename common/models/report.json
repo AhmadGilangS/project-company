@@ -1,0 +1,91 @@
+{
+    "name": "Report",
+    "options": {
+      "idInjection": false,
+      "mysql": {
+        "schema": "loopback-example-mysql",
+        "table": "report"
+      }
+    },
+    "properties": {
+      "project_id": {
+        "type": "Number",
+        "required": true,
+        "length": 10, 
+        "precision": 10,
+        "scale": 0,
+        "id":1,
+        "mysql": {
+          "columnName": "project_id",
+          "dataType": "Number",
+          "dataLength": 10,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+      },
+
+      "project_code": {
+        "type": "String",
+        "required": true,
+        "length": 100, 
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "project_code",
+          "dataType": "Varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+    },
+
+    "project_name": {
+        "type": "String",
+        "required": true,
+        "length": 10, 
+        "precision": 10,
+        "scale": 0,
+        "mysql": {
+          "columnName": "project_name",
+          "dataType": "Varchar",
+          "dataLength": 100,
+          "dataPrecision": 10,
+          "dataScale": 0,
+          "nullable": "N"
+        }
+    },
+        "project_status": {
+            "type": "String",
+            "required": true,
+            "length": 10, 
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+              "columnName": "project_status",
+              "dataType": "Varchar",
+              "dataLength": 10,
+              "dataPrecision": 10,
+              "dataScale": 0,
+              "nullable": "N"
+            }
+        },
+        
+        "pic_name": {
+            "type": "string",
+            "required": true,
+            "length": 10, 
+            "precision": 10,
+            "scale": 0,
+            "mysql": {
+              "columnName": "pic_name",
+              "dataType": "string",
+              "dataLength": 10,
+              "dataPrecision": 10,
+              "dataScale": 0,
+              "nullable": "N"
+            }
+        }
+    }
+}
